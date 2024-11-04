@@ -7,7 +7,7 @@ import { HomeContainerComponent } from './home/home-container/home-container.com
 import { AnnoucementDetailsContainerComponent } from './annoucement-details/annoucement-details-container/annoucement-details-container.component';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { ContainerComponentComponent } from './shared/container-component/container-component.component';
+import { WidthContainer } from './shared/width-container/width-container.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { ContainerComponentComponent } from './shared/container-component/contai
     AnnoucementDetailsContainerComponent,
     ToolbarComponent,
     FooterComponent,
-    ContainerComponentComponent
+    WidthContainer
   ],
   imports: [
     BrowserModule,
