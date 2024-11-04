@@ -1,0 +1,45 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.socials{
+    @extend .contact;
+}
+
+.social{
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    width: fit-content;
+    transition: all 0.3s ease-in;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
+
+.customer-services{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    a{
+        cursor: pointer;
+        color: #000000;
+        text-decoration: none;
+
+        &:hover{
+            color: #828486;
+        }
+    }
+}
+
+.styled-text{
+    color: #000000;
+    font-weight: 500;
+    margin: 0;
+    width: fit-content;
+}

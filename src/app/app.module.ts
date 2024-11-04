@@ -8,6 +8,10 @@ import { AnnoucementDetailsContainerComponent } from './annoucement-details/anno
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { WidthContainer } from './shared/width-container/width-container.component';
+import { FooterContactComponent } from './shared/footer/footer-contact/footer-contact.component';
+import { FooterInformationsComponent } from './shared/footer/footer-informations/footer-informations.component';
+import { FooterAboutUsComponent } from './shared/footer/footer-about-us/footer-about-us.component';
+import { FooterAppsComponent } from './shared/footer/footer-apps/footer-apps.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { WidthContainer } from './shared/width-container/width-container.compone
     AnnoucementDetailsContainerComponent,
     ToolbarComponent,
     FooterComponent,
-    WidthContainer
+    WidthContainer,
+    FooterContactComponent,
+    FooterInformationsComponent,
+    FooterAboutUsComponent,
+    FooterAppsComponent
   ],
   imports: [
     BrowserModule,
