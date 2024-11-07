@@ -1,7 +1,7 @@
 .contact{
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .socials{
@@ -24,12 +24,12 @@
 .customer-services{
     display: flex;
     flex-direction: column;
-    gap: 1em;
 
     a{
         cursor: pointer;
         color: #000000;
         text-decoration: none;
+        font-size: 0.8rem;
 
         &:hover{
             color: #828486;
@@ -42,4 +42,5 @@
     font-weight: 500;
     margin: 0;
     width: fit-content;
+    font-size: 0.8rem;
 }
