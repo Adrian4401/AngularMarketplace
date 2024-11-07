@@ -12,6 +12,7 @@ import { FooterContactComponent } from './shared/footer/footer-contact/footer-co
 import { FooterInformationsComponent } from './shared/footer/footer-informations/footer-informations.component';
 import { FooterAboutUsComponent } from './shared/footer/footer-about-us/footer-about-us.component';
 import { FooterAppsComponent } from './shared/footer/footer-apps/footer-apps.component';
+//try to use tsconfig.json paths, it will give you more freedom in restructurizing app in the long run
 import { AnnoucementDetailsHeaderComponent } from './annoucement-details/annoucement-details-header/annoucement-details-header.component';
 import { AnnoucementDetailsInfoComponent } from './annoucement-details/annoucement-details-info/annoucement-details-info.component';
 import { AnnoucementDetailsSidebarComponent } from './annoucement-details/annoucement-details-sidebar/annoucement-details-sidebar.component';

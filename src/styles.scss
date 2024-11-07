@@ -1,17 +1,24 @@
-$my-primary: #4c46c8;
-$my-light-gray: #e8e9ee;
-$my-gray: #a4a6a7;
-$my-red: #FF6161;
-$light-bg: #fbfcfe;
+/// for simple variable use css variables
+/// it will help you in a long run
+/// also you won't have to import this file in random places
+:root {
+  --my-primary: #4c46c8;
+  --my-light-gray: #e8e9ee;
+  --my-gray: #a4a6a7;
+  --my-red: #FF6161;
+  --light-bg: #fbfcfe;
 
-html, body{
-    margin: 50px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-h1{
-    margin-bottom: 0.3em;
-    font-size: 1.5rem;
+html,
+body {
+  margin: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 0.3rem; // only usecase of em is for inline components, not paragraphs themselves
+  font-size: 1.5rem;
 }

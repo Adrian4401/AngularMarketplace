@@ -8,12 +8,14 @@ import { Location } from '@angular/common';
 })
 export class BackButtonComponent implements OnInit {
 
+  /// Unmutable properties should be readonly
   constructor(private _location: Location) { }
 
   backClicked() {
     this._location.back();
   }
 
+  /// bloat
   ngOnInit(): void {
   }
 

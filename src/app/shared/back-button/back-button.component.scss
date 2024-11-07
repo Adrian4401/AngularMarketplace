@@ -1,22 +1,28 @@
-.goBackBtn{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5em;
-    width: fit-content;
-    transition: all 0.3s ease-in;
+/// Do not use camelcase in css
+/// It might blend in with js and we don't want this.
+/// Always use kebab case
+.goBackBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  width: fit-content;
+  transition: all 0.3s ease-in;
 
-    &:hover{
-        cursor: pointer;
-        transform: scale(1.03);
-    }
+  &:hover {
+    cursor: pointer;
+    /// While it looks nice, it does change size of this button
+    /// what might change size of other elements in for example flex
+    /// if those elements don't have set height/width
+    transform: scale(1.03);
+  }
 }
 
-.btnLabel{
-    font-size: 1.2rem;
-    font-weight: 500;
+.btnLabel {
+  font-size: 1.2rem;
+  font-weight: 500;
 
-    &:hover{
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }

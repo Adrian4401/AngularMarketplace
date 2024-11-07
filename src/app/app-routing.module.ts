@@ -13,7 +13,9 @@ const routes: Routes = [
     path: 'annoucement-details',
     component: AnnoucementDetailsContainerComponent,
     title: 'Annoucement details'
-  }
+  },
+  /// if path won't be perfectly matched, angular routing might do something unexpected
+  /// add path **
 ];
 
 @NgModule({
