@@ -46,7 +46,7 @@ import { BackButtonComponent } from './shared/back-button/back-button.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

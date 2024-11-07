@@ -3,9 +3,17 @@
     flex-direction: column;
 }
 
-.info{
+.info-section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 3em;
+    gap: 10em;
+}
+
+.info{
+    flex: 3
+}
+
+.sidebar{
+    flex: 2
 }
