@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 6%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
 
     &-container{
         width: 100%;
-        max-width: 1600px;
+        max-width: 1280px;
         display: flex;
         justify-content: space-between;
     }
@@ -35,7 +35,7 @@
     }
 
     &-logo{
-        width: 55px;
+        width: 3.5rem;
         aspect-ratio: 1/1;
     }
 
@@ -48,13 +48,13 @@
     &-buttons-container{
         display: flex;
         align-items: center;
-        gap: 3em;
+        gap: 2rem;
     }
 
     &-button{
         background: $my-primary;
-        height: 35px;
-        width: 120px;
+        width: 7rem;
+        height: 2.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
