@@ -17,3 +17,37 @@
     height: 0.2vh;
     background-color: $my-light-gray;
 }
+
+.bottom-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.annoucement-id{
+    font-size: 0.8rem;
+    color: $my-gray;
+}
+
+.report-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    color: $my-red;
+    font-weight: 500;
+    transition: all 0.3s;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+}
+
+.report-label{
+    &:hover{
+        cursor: pointer;
+    }
+}

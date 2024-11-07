@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { CarouselControlComponent, CarouselIndicatorsComponent, CarouselInnerComponent, CarouselItemComponent, CarouselModule } from '@coreui/angular';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeContainerComponent } from './home/home-container/home-container.component';
@@ -42,13 +44,14 @@ import { BackButtonComponent } from './shared/back-button/back-button.component'
     AnnoucementDetailsLocationComponent,
     AnnoucementDetailsPriceComponent,
     AnnoucementDetailsSellerComponent,
-    BackButtonComponent
+    BackButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CarouselModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
