@@ -1,0 +1,22 @@
+.goBackBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    width: fit-content;
+    transition: all 0.3s ease-in;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+}
+
+.btnLabel{
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
