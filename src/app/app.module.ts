@@ -23,6 +23,7 @@ import { AnnoucementDetailsLocationComponent } from './annoucement-details/annou
 import { AnnoucementDetailsPriceComponent } from './annoucement-details/annoucement-details-sidebar/annoucement-details-price/annoucement-details-price.component';
 import { AnnoucementDetailsSellerComponent } from './annoucement-details/annoucement-details-sidebar/annoucement-details-seller/annoucement-details-seller.component';
 import { BackButtonComponent } from './shared/back-button/back-button.component';
+import { SearchbarComponent } from './shared/searchbar/searchbar.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { BackButtonComponent } from './shared/back-button/back-button.component'
     AnnoucementDetailsPriceComponent,
     AnnoucementDetailsSellerComponent,
     BackButtonComponent,
+    SearchbarComponent,
   ],
   imports: [
     BrowserModule,
