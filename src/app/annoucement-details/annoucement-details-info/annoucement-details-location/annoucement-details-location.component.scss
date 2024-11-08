@@ -1,4 +1,21 @@
+@import 'src/styles';
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  margin: 0 0 1rem 0;
+}
+
 .map-container {
   width: 100%;
-  height: 15vh;
+  height: 25vh;
+}
+
+.location-label{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: $my-gray;
 }

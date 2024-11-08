@@ -31,7 +31,7 @@ export class AnnoucementDetailsLocationComponent implements OnInit {
       color: '#4c46c8',
       fillColor: '#4c46c8',
       fillOpacity: 0.3,
-      radius: 500
+      radius: 1000
     });
 
     circle.addTo(this.map);

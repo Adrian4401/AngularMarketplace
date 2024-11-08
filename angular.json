@@ -29,9 +29,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/@coreui/coreui/dist/css/coreui.min.css",
               "node_modules/leaflet/dist/leaflet.css"
-              
             ],
             "scripts": []
           },
