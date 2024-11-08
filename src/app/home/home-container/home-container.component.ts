@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeContainerComponent implements OnInit {
 
+  tempArray = new Array(10);
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,11 @@
 <div class="container">
     <searchbar></searchbar>
-    <annoucement-small></annoucement-small>
+    <!-- *ngFor="let a of tempArray; let index = index" -->
+
+    <div class="small-annoucements">
+      <h1>Wszystkie ogłoszenia</h1>
+      <div class="show-annoucements">
+        <annoucement-small *ngFor="let a of tempArray; let index = index"></annoucement-small>
+      </div>
+    </div>
 </div>

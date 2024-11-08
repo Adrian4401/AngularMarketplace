@@ -26,6 +26,7 @@ import { BackButtonComponent } from './shared/back-button/back-button.component'
 import { SearchbarComponent } from './shared/searchbar/searchbar.component';
 import { AnnoucementSmallComponent } from './annoucement-small/annoucement-small.component';
 import { AnnoucementLargeComponent } from './annoucement-large/annoucement-large.component';
+import { AnnoucementDetailsProposedComponent } from './annoucement-details/annoucement-details-proposed/annoucement-details-proposed.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { AnnoucementLargeComponent } from './annoucement-large/annoucement-large
     SearchbarComponent,
     AnnoucementSmallComponent,
     AnnoucementLargeComponent,
+    AnnoucementDetailsProposedComponent,
   ],
   imports: [
     BrowserModule,
