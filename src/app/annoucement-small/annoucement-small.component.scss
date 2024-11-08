@@ -1,0 +1,74 @@
+@import 'src/styles';
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 1rem;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  background: $my-annoucement-bg;
+  -webkit-box-shadow: 0px 0px 10px 0px rgb(194 194 196);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(194 194 196);
+  box-shadow: 0px 0px 10px 0px rgba(194 194 196);
+  transition: all 0.3s ease-in;
+
+  &:hover{
+    cursor: pointer;
+    background: $my-light-gray;
+  }
+}
+
+img.photo{
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 0.6rem;
+}
+
+img{
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: space-between;
+
+  &,
+  &-label{
+    font-size: 1rem;
+    font-weight: 700;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.price{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $my-primary;
+  text-align: center;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.basic-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: $my-gray;
+}
+
+.city, .add-date{
+  &:hover{
+    cursor: pointer;
+  }
+}

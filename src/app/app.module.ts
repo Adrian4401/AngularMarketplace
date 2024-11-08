@@ -24,6 +24,8 @@ import { AnnoucementDetailsPriceComponent } from './annoucement-details/annoucem
 import { AnnoucementDetailsSellerComponent } from './annoucement-details/annoucement-details-sidebar/annoucement-details-seller/annoucement-details-seller.component';
 import { BackButtonComponent } from './shared/back-button/back-button.component';
 import { SearchbarComponent } from './shared/searchbar/searchbar.component';
+import { AnnoucementSmallComponent } from './annoucement-small/annoucement-small.component';
+import { AnnoucementLargeComponent } from './annoucement-large/annoucement-large.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { SearchbarComponent } from './shared/searchbar/searchbar.component';
     AnnoucementDetailsSellerComponent,
     BackButtonComponent,
     SearchbarComponent,
+    AnnoucementSmallComponent,
+    AnnoucementLargeComponent,
   ],
   imports: [
     BrowserModule,

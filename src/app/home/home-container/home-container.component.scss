@@ -1,15 +1,5 @@
-@import 'src/styles';
-
-.nav-button{
-    background: $my-primary;
-    width: fit-content;
-    border-radius: 1rem;
-    padding: 0.1rem 1rem;
-    color: $my-light-gray;
-    transition: all 0.3s ease-in;
-
-    &:hover{
-        cursor: pointer;
-        transform: scale(1.03);
-    }
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
