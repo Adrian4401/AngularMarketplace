@@ -48,6 +48,19 @@ img{
   }
 }
 
+.price-type{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.type{
+  background: rgba($my-accent, 0.2);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.5rem;
+}
+
 .price{
   font-size: 1.4rem;
   font-weight: 700;
@@ -59,7 +72,7 @@ img{
   }
 }
 
-.basic-info{
+.basic-info-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -67,8 +80,21 @@ img{
   color: $my-gray;
 }
 
+.basic-info{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 .city, .add-date{
   &:hover{
     cursor: pointer;
   }
+}
+
+.icon-info{
+  color: $my-primary;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
