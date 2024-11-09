@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { CarouselControlComponent, CarouselIndicatorsComponent, CarouselInnerComponent, CarouselItemComponent, CarouselModule } from '@coreui/angular';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeContainerComponent } from './home/home-container/home-container.component';
@@ -27,6 +25,8 @@ import { SearchbarComponent } from './shared/searchbar/searchbar.component';
 import { AnnoucementSmallComponent } from './annoucement-small/annoucement-small.component';
 import { AnnoucementLargeComponent } from './annoucement-large/annoucement-large.component';
 import { AnnoucementDetailsProposedComponent } from './annoucement-details/annoucement-details-proposed/annoucement-details-proposed.component';
+import { CarouselComponent } from './shared/carousel/carousel.component';
+
 
 @NgModule({
   declarations: [
@@ -53,11 +53,11 @@ import { AnnoucementDetailsProposedComponent } from './annoucement-details/annou
     AnnoucementSmallComponent,
     AnnoucementLargeComponent,
     AnnoucementDetailsProposedComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    CarouselModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
