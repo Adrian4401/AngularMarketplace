@@ -21,7 +21,13 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@shared/*": ["./src/app/shared/*"],
+      "@footer/*": ["./src/app/shared/footer/*"],
+      "@annoucement-sidebar/*": ["./src/app/annoucement-details/annoucement-details-sidebar/*"],
+      "@annoucement-info/*": ["./src/app/annoucement-details/annoucement-details-info/*"],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

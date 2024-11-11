@@ -1,12 +1,45 @@
-.container{
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
+@import 'src/styles';
 
 h1{
   margin: 0;
   font-size: 2rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+}
+
+.hero-banner{
+  background: rgba(0, 0, 0, 0.4) url('../../../assets/hero-bg1.png');
+  background-blend-mode: darken;
+  background-size: cover;
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  &-title{
+    font-size: 2rem;
+    color: $my-light-gray;
+    text-align: center;
+  }
+
+  &-subtitle{
+    @extend .hero-banner-title;
+    font-size: 1.2rem;
+  }
 }
 
 .small-annoucements{
