@@ -1,19 +1,32 @@
-<div class="hero-banner">
+<div class="home-container">
+
+  <div class="hero-banner">
+    <width-container>
+      <div class="hero-banner-texts">
+        <label class="hero-banner-title">Witaj na platformie Alledrogo</label>
+        <label class="hero-banner-subtitle">Znajdź to, czego szukasz, i sprzedaj to, czego już nie potrzebujesz – w jednym miejscu, bez komplikacji i w przyjaznej atmosferze. Nasz internetowy portal ogłoszeniowy to przestrzeń, gdzie zakupy stają się przyjemnością, a znalezienie świetnych okazji jest prostsze niż kiedykolwiek!</label>
+      </div>
+      <searchbar></searchbar>
+    </width-container>
+  </div>
+
   <width-container>
-    <div class="hero-banner-texts">
-      <label class="hero-banner-title">Witaj na platformie Alledrogo</label>
-      <label class="hero-banner-subtitle">Znajdź to, czego szukasz, i sprzedaj to, czego już nie potrzebujesz – w jednym miejscu, bez komplikacji i w przyjaznej atmosferze. Nasz internetowy portal ogłoszeniowy to przestrzeń, gdzie zakupy stają się przyjemnością, a znalezienie świetnych okazji jest prostsze niż kiedykolwiek!</label>
+    <div class="small-annoucements">
+      <h1>Promowane ogłoszenia</h1>
+      <div class="show-annoucements">
+        <annoucement-small *ngFor="let a of tempArray; let index = index"></annoucement-small>
+      </div>
     </div>
-    <searchbar></searchbar>
   </width-container>
-</div>
-<width-container>
-  <div class="container">
+
+  <app-ad></app-ad>
+
+  <width-container>
     <div class="small-annoucements">
       <h1>Wszystkie ogłoszenia</h1>
       <div class="show-annoucements">
         <annoucement-small *ngFor="let a of tempArray; let index = index"></annoucement-small>
       </div>
     </div>
-  </div>
-</width-container>
+  </width-container>
+</div>

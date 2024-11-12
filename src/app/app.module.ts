@@ -26,6 +26,9 @@ import { AnnoucementSmallComponent } from './annoucement-small/annoucement-small
 import { AnnoucementLargeComponent } from './annoucement-large/annoucement-large.component';
 import { AnnoucementDetailsProposedComponent } from './annoucement-details/annoucement-details-proposed/annoucement-details-proposed.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
+import { AdComponent } from './shared/ad/ad.component';
+import { ResultsComponent } from './results/results.component';
+import { FiltersComponent } from './results/filters/filters.component';
 
 
 @NgModule({
@@ -53,7 +56,10 @@ import { CarouselComponent } from './shared/carousel/carousel.component';
     AnnoucementSmallComponent,
     AnnoucementLargeComponent,
     AnnoucementDetailsProposedComponent,
-    CarouselComponent
+    CarouselComponent,
+    AdComponent,
+    ResultsComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
