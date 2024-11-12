@@ -2,5 +2,9 @@
   <width-container>
     <searchbar></searchbar>
     <filters></filters>
+    <h1>Znalezione ogłoszenia</h1>
+    <div *ngFor="let annoucement of tempArray" class="annoucements-container">
+      <annoucement-large></annoucement-large>
+    </div>
   </width-container>
 </div>
