@@ -1,4 +1,8 @@
-<div routerLink="/annoucement-details" class="container">
+<div
+  routerLink="/annoucement-details"
+  class="container"
+  [ngClass]="{'container-promoted': isPromoted, 'container-regular': !isPromoted }"
+  >
     <img src="assets/adImg/ip3.jpg" class="photo" alt="Main photo" />
     <div class="title">
         <label class="title-label">Iphone 15 pro zadbany kondycja 93%</label>
@@ -22,4 +26,5 @@
           <label class="add-date">12.04.2025</label>
         </div>
     </div>
+    <p>isPromoted: {{ isPromoted }}</p>
 </div>

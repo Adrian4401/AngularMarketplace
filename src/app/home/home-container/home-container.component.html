@@ -11,12 +11,25 @@
   </div>
 
   <width-container>
+    <div class="categories-container">
+      <h1>Kategorie</h1>
+      <div  class="categories">
+        <div *ngFor="let category of categories" class="category">
+          <div class="category-bg" [style.background-color]="category.backgroundColor">
+            <i class="category-icon" [ngClass]="category.icon"></i>
+          </div>
+          <p class="category-name">{{category.name}}</p>
+        </div>
+      </div>
+    </div>
+
     <div class="small-annoucements">
       <h1>Promowane ogłoszenia</h1>
       <div class="show-annoucements">
-        <annoucement-small *ngFor="let a of tempArray; let index = index"></annoucement-small>
+        <annoucement-small [isPromoted]="true" *ngFor="let a of tempArray; let index = index"></annoucement-small>
       </div>
     </div>
+
   </width-container>
 
   <app-ad></app-ad>
@@ -29,4 +42,5 @@
       </div>
     </div>
   </width-container>
+
 </div>

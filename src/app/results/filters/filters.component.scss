@@ -11,6 +11,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 1rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .filter-input-container{
@@ -21,6 +24,11 @@
   padding: 1rem;
   border-radius: 0.5rem;
   background: rgba($my-light-gray, 0.5);
+
+  &-price{
+    @extend .filter-input-container;
+    width: 8rem;
+  }
 }
 
 .filter-icon{
@@ -41,6 +49,12 @@
   border: 0;
   background: transparent;
   font-size: 0.9rem;
+  width: 100%;
+
+  &-price{
+    @extend .filter-input;
+    text-align: center;
+  }
 
   &:focus{
       outline: none;

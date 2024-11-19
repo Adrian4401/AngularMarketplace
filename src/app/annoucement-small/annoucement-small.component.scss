@@ -7,15 +7,29 @@
   gap: 1rem;
   padding: 0.7rem;
   border-radius: 1rem;
-  background: $my-annoucement-bg;
   -webkit-box-shadow: 0px 0px 10px 0px rgb(194 194 196);
   -moz-box-shadow: 0px 0px 10px 0px rgba(194 194 196);
   box-shadow: 0px 0px 10px 0px rgba(194 194 196);
   transition: all 0.3s ease-in;
 
+  &-regular{
+    background: $my-annoucement-bg;
+
+    &:hover{
+      background: $my-light-gray;
+    }
+  }
+
+  &-promoted{
+    background: rgba($my-accent, 0.15);
+
+    &:hover{
+      background: rgba($my-accent, 0.25);
+    }
+  }
+
   &:hover{
     cursor: pointer;
-    background: $my-light-gray;
   }
 }
 
