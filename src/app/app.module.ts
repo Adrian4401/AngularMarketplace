@@ -31,6 +31,7 @@ import { ResultsComponent } from './results/results.component';
 import { FiltersComponent } from './results/filters/filters.component';
 import { LoggedToolbarComponent } from './components/logged-toolbar/logged-toolbar.component';
 import { AddAnnoucementComponent } from './add-annoucement/add-annoucement.component';
+import { StepContainerComponent } from './add-annoucement/step-container/step-container.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { AddAnnoucementComponent } from './add-annoucement/add-annoucement.compo
     ResultsComponent,
     FiltersComponent,
     LoggedToolbarComponent,
-    AddAnnoucementComponent
+    AddAnnoucementComponent,
+    StepContainerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,52 @@
+@import 'src/styles.scss';
+
+.step-container{
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.step-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  flex: 1;
+
+  &-circle{
+    height: 2rem;
+    aspect-ratio: 1/1;
+    border: 2px solid $my-primary;
+    border-radius: 2rem;
+
+    &-checked{
+      @extend .step-section-circle;
+      background: $my-primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &-line{
+    width: 2px;
+    background: $my-primary;
+    flex-grow: 1;
+    margin: 0.1rem 0;
+  }
+}
+
+.check-icon{
+  font-size: 1rem;
+  color: $my-light-gray;
+}
+
+.form-section{
+  width: 100%;
+  margin-bottom: 3rem;
+  background: $my-light-gray;
+  -webkit-box-shadow: 0px 0px 10px 0px rgb(167 167 170);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(167 167 170);
+  box-shadow: 0px 0px 10px 0px rgba(167 167 170);
+  border-radius: 1rem;
+}
