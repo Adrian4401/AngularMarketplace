@@ -1,3 +1,4 @@
-<toolbar></toolbar>
+<toolbar *ngIf="isLogged === false" (loginStatusChange)="handleLoginStatusChange($event)"></toolbar>
+<logged-toolbar *ngIf="isLogged === true"></logged-toolbar>
 <router-outlet></router-outlet>
 <footer></footer>

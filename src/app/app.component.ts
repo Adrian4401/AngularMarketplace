@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'marketplace';
+  isLogged: boolean = false;
 
+  handleLoginStatusChange(status: boolean): void {
+    this.isLogged = status;
+  }
 }

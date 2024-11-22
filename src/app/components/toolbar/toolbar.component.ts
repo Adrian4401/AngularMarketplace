@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'toolbar',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent implements OnInit {
+  @Output() loginStatusChange = new EventEmitter<any>();
+
+  onLogin(): void {
+    this.loginStatusChange.emit(true as any);
+  }
 
   constructor() { }
 

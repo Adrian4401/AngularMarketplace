@@ -6,6 +6,7 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "strictFunctionTypes": false,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -23,8 +24,8 @@
       "dom"
     ],
     "paths": {
-      "@shared/*": ["./src/app/shared/*"],
-      "@footer/*": ["./src/app/shared/footer/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@footer/*": ["./src/app/components/footer/*"],
       "@annoucement-sidebar/*": ["./src/app/annoucement-details/annoucement-details-sidebar/*"],
       "@annoucement-info/*": ["./src/app/annoucement-details/annoucement-details-info/*"],
     }

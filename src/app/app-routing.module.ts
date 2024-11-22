@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeContainerComponent } from './home/home-container/home-container.component';
 import { AnnoucementDetailsContainerComponent } from './annoucement-details/annoucement-details-container/annoucement-details-container.component';
 import { ResultsComponent } from './results/results.component';
+import { AddAnnoucementComponent } from './add-annoucement/add-annoucement.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,12 @@ const routes: Routes = [
     path: 'annoucement-details',
     component: AnnoucementDetailsContainerComponent,
     title: 'Annoucement details'
-  }
+  },
+  {
+    path: 'add-annoucement',
+    component: AddAnnoucementComponent,
+    title: 'Add annoucement'
+  },
 ];
 
 @NgModule({
