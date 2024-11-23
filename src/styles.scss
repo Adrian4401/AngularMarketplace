@@ -8,10 +8,11 @@ $my-annoucement-bg: #f2f2f5;
 
 $my-light-gray: #e8e9ee;
 $my-gray: #a4a6a7;
+$my-graphite: #7a7b7b;
 $my-red: #FF6161;
 
 
-html, body{
+html, body {
     margin: 3vh 0 0 0;
     display: flex;
     align-items: center;
@@ -20,7 +21,67 @@ html, body{
     overflow-x: hidden;
 }
 
-h1{
+h1 {
     margin-bottom: 0.3em;
     font-size: 1.5rem;
+}
+
+h1.step-title {
+  margin: 0;
+}
+
+p.subtitle {
+  color: $my-graphite;
+  margin: 0 0 0.3rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+p.subtitle-desc {
+  color: $my-gray;
+  margin: 0 0 1rem 0;
+  font-size: 0.8rem;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background: $light-bg;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid rgba($my-gray, 0.7);
+  width: 50%;
+  transition: all 0.3s;
+
+  &:hover{
+    border: 0.1rem solid rgba($my-accent, 0.7);
+  }
+}
+
+input.step-input {
+  border: 0;
+  background: transparent;
+  font-size: 0.9rem;
+  width: 100%;
+
+  &:focus{
+      outline: none;
+  }
+
+  &::placeholder{
+      color: $my-gray;
+  }
+}
+
+.step-input-icon {
+  color: $my-primary;
 }

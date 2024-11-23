@@ -32,6 +32,11 @@ import { FiltersComponent } from './results/filters/filters.component';
 import { LoggedToolbarComponent } from './components/logged-toolbar/logged-toolbar.component';
 import { AddAnnoucementComponent } from './add-annoucement/add-annoucement.component';
 import { StepContainerComponent } from './add-annoucement/step-container/step-container.component';
+import { TitleCategoriesComponent } from './add-annoucement/title-categories/title-categories.component';
+import { PhotosDescComponent } from './add-annoucement/photos-desc/photos-desc.component';
+import { AdditionalInfoComponent } from './add-annoucement/additional-info/additional-info.component';
+import { UserInfoComponent } from './add-annoucement/user-info/user-info.component';
+import { AddressComponent } from './add-annoucement/address/address.component';
 
 
 @NgModule({
@@ -65,7 +70,12 @@ import { StepContainerComponent } from './add-annoucement/step-container/step-co
     FiltersComponent,
     LoggedToolbarComponent,
     AddAnnoucementComponent,
-    StepContainerComponent
+    StepContainerComponent,
+    TitleCategoriesComponent,
+    PhotosDescComponent,
+    AdditionalInfoComponent,
+    UserInfoComponent,
+    AddressComponent
   ],
   imports: [
     BrowserModule,
