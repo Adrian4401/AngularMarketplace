@@ -1,0 +1,53 @@
+@import 'src/styles.scss';
+
+.step-checkbox-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+  width: fit-content;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  p{
+    margin: 0;
+  }
+}
+
+.step-checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  aspect-ratio: 1/1;
+  border-radius: 0.2rem;
+  border: 0.1rem solid $my-primary;
+  padding: 0.1rem;
+
+  &-checked{
+    background: $my-primary;
+  }
+
+  &-label{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: $my-graphite;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.check-icon-light{
+  color: $my-light-gray;
+}
+
+.step-buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}

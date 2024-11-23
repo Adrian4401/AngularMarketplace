@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdditionalInfoComponent implements OnInit {
 
+  isChecked: boolean = false;
+  selectedButton: string = 'nowe';
+
+  onChangeChecked(): void {
+    this.isChecked = !this.isChecked;
+  }
+
+  onSelectButton(buttonValue: string): void {
+    this.selectedButton = buttonValue;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

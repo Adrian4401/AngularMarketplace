@@ -1,29 +1,72 @@
 <step-container>
   <div class="step-container">
-    <h1 class="step-title">Podstawowe informacje</h1>
-    <div class="title-container">
-      <p class="subtitle">Tytuł ogłoszenia</p>
-      <p class="subtitle-desc">Zachęć użytkowników do sprawdzenia twojego ogłoszenia (maksymalnie 50 znaków)</p>
+    <h1 class="step-title">Dodatkowe informacje</h1>
+    <div class="price-container">
+      <p class="subtitle">Cena</p>
+      <p class="subtitle-desc">Podaj cenę jaka Cię interesuje</p>
       <div class="step-input-container">
         <input
-          type="text"
+          type="number"
           class="step-input"
-          placeholder="Wprowadź tytuł..."
-          maxlength="50"
+          placeholder="Podaj cenę"
+          min="0"
+          max="100000"
+          step="1"
         >
+      </div>
+      <div
+        class="step-checkbox-container"
+        (click)="onChangeChecked()"
+      >
+        <div
+          class="step-checkbox"
+          [ngClass]="{'step-checkbox-checked': isChecked}"
+        >
+          <i
+            class="fas fa-check check-icon-light"
+            *ngIf="isChecked"
+          ></i>
+        </div>
+        <label for="step-checkbox" class="step-checkbox-label">Do negocjacji</label>
       </div>
     </div>
     <div class="category-container">
-      <p class="subtitle">Kategoria</p>
-      <p class="subtitle-desc">Wybierając odpowiednią kategorię więcej użytkowników odwiedzi Twoje ogłoszenie</p>
-      <div class="step-input-container">
-        <i class="fas fa-layer-group step-input-icon"></i>
-        <input
-          type="text"
-          class="step-input"
-          placeholder="Wybierz kategorię"
-          readonly
+      <p class="subtitle">Stan</p>
+      <p class="subtitle-desc">Wybierz stan sprzedawanego przedmiotu</p>
+      <div class="step-buttons-container">
+        <div
+          class="step-button"
+          [ngClass]="{'step-button-checked': selectedButton === 'nowe'}"
+          (click)="onSelectButton('nowe')"
         >
+          <label
+            for="step-button"
+            class="step-button-label"
+            [ngClass]="{'step-button-label-checked': selectedButton === 'nowe'}"
+          >Nowe</label>
+        </div>
+        <div
+          class="step-button"
+          [ngClass]="{'step-button-checked': selectedButton === 'uzywane'}"
+          (click)="onSelectButton('uzywane')"
+        >
+          <label
+            for="step-button"
+            class="step-button-label"
+            [ngClass]="{'step-button-label-checked': selectedButton === 'uzywane'}"
+          >Używane</label>
+        </div>
+        <div
+          class="step-button"
+          [ngClass]="{'step-button-checked': selectedButton === 'uszkodzone'}"
+          (click)="onSelectButton('uszkodzone')"
+        >
+          <label
+            for="step-button"
+            class="step-button-label"
+            [ngClass]="{'step-button-label-checked': selectedButton === 'uszkodzone'}"
+          >Uszkodzone</label>
+        </div>
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StepContainerComponent implements OnInit {
 
-  isChecked: boolean = true;
+  isChecked: boolean = false;
 
   constructor() { }
 

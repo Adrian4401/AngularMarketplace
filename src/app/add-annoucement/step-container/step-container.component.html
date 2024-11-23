@@ -1,8 +1,13 @@
 <div class="step-container">
   <div class="step-section">
-    <div *ngIf="isChecked === false" class="step-section-circle"></div>
-    <div *ngIf="isChecked === true" class="step-section-circle-checked">
-      <i class="fas fa-check check-icon"></i>
+    <div
+      class="step-section-circle"
+      [ngClass]="{'step-section-circle-checked': isChecked}"
+    >
+      <i
+        class="fas fa-check check-icon"
+        *ngIf="isChecked"
+      ></i>
     </div>
     <div class="step-section-line"></div>
   </div>

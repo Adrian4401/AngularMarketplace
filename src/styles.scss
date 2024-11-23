@@ -85,3 +85,38 @@ input.step-input {
 .step-input-icon {
   color: $my-primary;
 }
+
+.step-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid $my-primary;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  width: 7rem;
+  transition: all 0.3s;
+  background: $light-bg;
+  color: $my-graphite;
+
+  &:hover{
+    cursor: pointer;
+    background: $my-primary;
+    color: $my-light-gray;
+  }
+
+  &-checked{
+    background: $my-primary;
+  }
+
+  &-label{
+    font-weight: 500;
+
+    &-checked{
+      color: $my-light-gray;
+    }
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
