@@ -37,6 +37,7 @@ import { PhotosDescComponent } from './add-annoucement/photos-desc/photos-desc.c
 import { AdditionalInfoComponent } from './add-annoucement/additional-info/additional-info.component';
 import { UserInfoComponent } from './add-annoucement/user-info/user-info.component';
 import { AddressComponent } from './add-annoucement/address/address.component';
+import { MapComponent } from './components/map/map.component';
 
 
 @NgModule({
@@ -75,7 +76,8 @@ import { AddressComponent } from './add-annoucement/address/address.component';
     PhotosDescComponent,
     AdditionalInfoComponent,
     UserInfoComponent,
-    AddressComponent
+    AddressComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

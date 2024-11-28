@@ -1,29 +1,60 @@
 <step-container>
   <div class="step-container">
-    <h1 class="step-title">Podstawowe informacje</h1>
-    <div class="title-container">
-      <p class="subtitle">Tytuł ogłoszenia</p>
-      <p class="subtitle-desc">Zachęć użytkowników do sprawdzenia twojego ogłoszenia (maksymalnie 50 znaków)</p>
-      <div class="step-input-container">
-        <input
-          type="text"
-          class="step-input"
-          placeholder="Wprowadź tytuł..."
-          maxlength="50"
-        >
+    <h1 class="step-title">Lokalizacja i adres</h1>
+    <div class="map-container">
+      <div class="title-container">
+        <div class="subtitles-container">
+          <p class="subtitle">Lokalizacja</p>
+          <p class="subtitle-desc-custom">Pomaga sortować ogłoszenia</p>
+        </div>
+        <div class="localization-button">
+          <i class="fas fa-map-pin"></i>
+          <label for="localization-button">Zlokalizuj mnie</label>
+        </div>
       </div>
+      <map></map>
     </div>
     <div class="category-container">
-      <p class="subtitle">Kategoria</p>
-      <p class="subtitle-desc">Wybierając odpowiednią kategorię więcej użytkowników odwiedzi Twoje ogłoszenie</p>
-      <div class="step-input-container">
-        <i class="fas fa-layer-group step-input-icon"></i>
-        <input
-          type="text"
-          class="step-input"
-          placeholder="Wybierz kategorię"
-          readonly
-        >
+      <p class="subtitle">Adres</p>
+      <p class="subtitle-desc">Zostanie pobrany automatycznie lub można ręcznie wpisać</p>
+      <div class="inputs-container">
+        <div class="step-input-container">
+          <input
+            type="text"
+            class="step-input"
+            placeholder="Ulica"
+          >
+        </div>
+        <div class="step-input-container">
+          <input
+            type="text"
+            class="step-input"
+            placeholder="Numer domu"
+          >
+        </div>
+        <div class="step-input-container">
+          <input
+            type="text"
+            class="step-input"
+            placeholder="Numer mieszkania"
+          >
+        </div>
+      </div>
+      <div class="inputs-container">
+        <div class="step-input-container">
+          <input
+            type="text"
+            class="step-input"
+            placeholder="Miasto"
+          >
+        </div>
+        <div class="step-input-container">
+          <input
+            type="text"
+            class="step-input"
+            placeholder="Kod pocztowy"
+          >
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,44 @@
+@import 'src/styles.scss';
+
+.title-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+.subtitle-desc-custom{
+  color: $my-gray;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.localization-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  color: $my-primary;
+  font-weight: 500;
+  transition: all 0.3s;
+
+  &:hover{
+    cursor: pointer;
+    color: $my-accent;
+  }
+
+  label{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.inputs-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}

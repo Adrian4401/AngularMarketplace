@@ -1,0 +1,80 @@
+@import 'src/styles.scss';
+
+.photos-title-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-icon{
+  font-size: 1.1rem;
+}
+
+.step-textarea{
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  border: 0.1rem solid $my-gray;
+  padding: 0.4rem;
+  resize: none;
+
+  &:focus{
+    outline: none;
+  }
+
+  &::placeholder{
+      color: $my-gray;
+  }
+
+  &:active{
+    border: 0.1rem solid $my-primary;
+  }
+}
+
+.photos-section{
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.photos-container{
+  background: red;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 2rem;
+  padding-bottom: 0.3rem;
+  box-sizing: border-box;
+  width: 100%;
+
+  scrollbar-width: auto;
+  scrollbar-color: rgba($my-gray, 0.4) transparent;
+
+  &::-webkit-scrollbar {
+    height: 0.1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 4px;
+  }
+}
+
+.styled-photo{
+  height: 100%;
+  flex-shrink: 0;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.img-styled{
+  height: 100%;
+  border-radius: 0.5rem;
+  aspect-ratio: 16/9;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+

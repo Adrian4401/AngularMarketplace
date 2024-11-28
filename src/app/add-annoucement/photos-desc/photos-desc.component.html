@@ -1,30 +1,77 @@
 <step-container>
   <div class="step-container">
-    <h1 class="step-title">Podstawowe informacje</h1>
-    <div class="title-container">
-      <p class="subtitle">Tytuł ogłoszenia</p>
-      <p class="subtitle-desc">Zachęć użytkowników do sprawdzenia twojego ogłoszenia (maksymalnie 50 znaków)</p>
-      <div class="step-input-container">
-        <input
-          type="text"
-          class="step-input"
-          placeholder="Wprowadź tytuł..."
-          maxlength="50"
-        >
+    <h1 class="step-title">Zdjęcia i opis</h1>
+    <div class="photos-section">
+      <div class="photos-title-container">
+        <div class="photo-title">
+          <p class="subtitle">Wybierz zdjęcia do ogłoszenia</p>
+          <p class="subtitle-desc">Uatrakcyjnią ogłoszenie i przyciągną uwagę ewentualnych kupujących</p>
+        </div>
+        <div class="step-button">
+          <i class="fas fa-plus step-button-label add-icon"></i>
+          <label for="step-button" class="step-button-label">Dodaj</label>
+        </div>
+      </div>
+      <div class="photos-container">
+        <!-- <div class="styled-photo">
+          <img
+            src="assets/adImg/ip1.jpg"
+            alt="annoucement photo"
+            class="img-styled"
+          />
+        </div>
+        <div class="styled-photo">
+          <img
+            src="assets/adImg/ip1.jpg"
+            alt="annoucement photo"
+            class="img-styled"
+          />
+        </div>
+        <div class="styled-photo">
+          <img
+            src="assets/adImg/ip1.jpg"
+            alt="annoucement photo"
+            class="img-styled"
+          />
+        </div>
+        <div class="styled-photo">
+          <img
+            src="assets/adImg/ip1.jpg"
+            alt="annoucement photo"
+            class="img-styled"
+          />
+        </div> -->
+        <img
+            src="assets/adImg/ip1.jpg"
+            alt="annoucement photo"
+            class="img-styled"
+          />
+          <img
+            src="assets/adImg/ip1.jpg"
+            alt="annoucement photo"
+            class="img-styled"
+          />
+          <img
+            src="assets/adImg/ip1.jpg"
+            alt="annoucement photo"
+            class="img-styled"
+          />
+          <img
+            src="assets/adImg/ip1.jpg"
+            alt="annoucement photo"
+            class="img-styled"
+          />
       </div>
     </div>
     <div class="category-container">
-      <p class="subtitle">Kategoria</p>
-      <p class="subtitle-desc">Wybierając odpowiednią kategorię więcej użytkowników odwiedzi Twoje ogłoszenie</p>
-      <div class="step-input-container">
-        <i class="fas fa-layer-group step-input-icon"></i>
-        <input
-          type="text"
-          class="step-input"
-          placeholder="Wybierz kategorię"
-          readonly
-        >
-      </div>
+      <p class="subtitle">Opis</p>
+      <p class="subtitle-desc">Dobrze sformułowany jest kluczowy dla niezdecydowanych kupujących (maksymalnie 1000 znaków)</p>
+      <textarea
+        class="step-textarea"
+        rows="7"
+        maxlength="1000"
+        placeholder="Wpisz opis..."
+      ></textarea>
     </div>
   </div>
 </step-container>
