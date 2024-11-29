@@ -1,3 +1,4 @@
+import { StepStatusService } from './../step-status.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,9 +10,16 @@ export class StepContainerComponent implements OnInit {
 
   isChecked: boolean = false;
 
-  constructor() { }
+  constructor(private stepStatusService: StepStatusService) { }
 
   ngOnInit(): void {
+    this.stepStatusService.stepStatus$.subscribe(status => {
+      this.isChecked = status;
+    })
   }
+
+  // updateStepStatus(status: boolean): void {
+
+  // }
 
 }

@@ -7,60 +7,29 @@
           <p class="subtitle">Wybierz zdjęcia do ogłoszenia</p>
           <p class="subtitle-desc">Uatrakcyjnią ogłoszenie i przyciągną uwagę ewentualnych kupujących</p>
         </div>
-        <div class="step-button">
+        <div class="step-button" (click)="triggerFileInput()">
+          <input
+            type="file"
+            class="image-upload"
+            accept="image/*"
+            multiple
+            hidden
+            id="step-button"
+            (change)="onFileChange($event)"
+          >
           <i class="fas fa-plus step-button-label add-icon"></i>
-          <label for="step-button" class="step-button-label">Dodaj</label>
+          <label class="step-button-label">Dodaj</label>
         </div>
       </div>
       <div class="photos-container">
-        <!-- <div class="styled-photo">
+        <div *ngFor="let file of selectedFiles; let i = index" class="styled-photo">
           <img
-            src="assets/adImg/ip1.jpg"
-            alt="annoucement photo"
+            [src]="file.preview"
+            [alt]="file.name"
             class="img-styled"
           />
+          <i (click)="removeFile(i)" class="fas fa-trash delete-icon"></i>
         </div>
-        <div class="styled-photo">
-          <img
-            src="assets/adImg/ip1.jpg"
-            alt="annoucement photo"
-            class="img-styled"
-          />
-        </div>
-        <div class="styled-photo">
-          <img
-            src="assets/adImg/ip1.jpg"
-            alt="annoucement photo"
-            class="img-styled"
-          />
-        </div>
-        <div class="styled-photo">
-          <img
-            src="assets/adImg/ip1.jpg"
-            alt="annoucement photo"
-            class="img-styled"
-          />
-        </div> -->
-        <img
-            src="assets/adImg/ip1.jpg"
-            alt="annoucement photo"
-            class="img-styled"
-          />
-          <img
-            src="assets/adImg/ip1.jpg"
-            alt="annoucement photo"
-            class="img-styled"
-          />
-          <img
-            src="assets/adImg/ip1.jpg"
-            alt="annoucement photo"
-            class="img-styled"
-          />
-          <img
-            src="assets/adImg/ip1.jpg"
-            alt="annoucement photo"
-            class="img-styled"
-          />
       </div>
     </div>
     <div class="category-container">
