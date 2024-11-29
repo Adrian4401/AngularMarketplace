@@ -1,7 +1,7 @@
 <div class="add-annoucement-container">
   <h1>Dodaj ogłoszenie</h1>
   <div class="steps">
-    <title-categories></title-categories>
+    <title-categories (titleChange)="updateTitle($event)"></title-categories>
     <photos-desc></photos-desc>
     <additional-info></additional-info>
     <user-address></user-address>
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="form-section">
-        <div class="add-button">
+        <div class="add-button" (click)="addAnnoucement()">
           <p class="add-button-text">Dodaj ogłoszenie</p>
         </div>
       </div>

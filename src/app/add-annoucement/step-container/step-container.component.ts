@@ -18,8 +18,4 @@ export class StepContainerComponent implements OnInit {
     })
   }
 
-  // updateStepStatus(status: boolean): void {
-
-  // }
-
 }

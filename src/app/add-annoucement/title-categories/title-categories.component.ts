@@ -8,7 +8,7 @@ import { StepStatusService } from '../step-status.service';
 })
 export class TitleCategoriesComponent implements OnInit {
 
-  // @Output() stepStatusChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Output() titleChange = new EventEmitter<string>();
 
   formData = {
     title: '',
@@ -24,11 +24,14 @@ export class TitleCategoriesComponent implements OnInit {
     const value = inputElement?.value ?? '';
     this.formData[field] = value;
 
+    if(field === 'title') {
+      this.titleChange.emit(value);
+    }
+
     const isTitleValid = this.formData.title.length > 9;
     // const isCategoryValid = this.formData.category != '';
 
     this.stepStatusService.updateStepStatus(isTitleValid);
-    // this.stepStatusChange.emit(isTitleValid);
     // this.stepStatusChange.emit(isTitleValid && isCategoryValid);
   }
 

@@ -21,7 +21,11 @@
           <label class="step-button-label">Dodaj</label>
         </div>
       </div>
-      <div class="photos-container">
+      <div *ngIf="selectedFiles.length === 0" class="emptyFilesInfo">
+        <i class="fas fa-image"></i>
+        <p>Nie ma jeszcze żadnych zdjęć</p>
+      </div>
+      <div *ngIf="selectedFiles.length !== 0" class="photos-container">
         <div *ngFor="let file of selectedFiles; let i = index" class="styled-photo">
           <img
             [src]="file.preview"

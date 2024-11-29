@@ -96,3 +96,25 @@
     opacity: 0.8;
   }
 }
+
+.emptyFilesInfo{
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 0.3rem;
+  width: 100%;
+  background-color: rgba($my-gray, 0.7);
+  border-radius: 0.5rem;
+
+  i{
+    font-size: 3rem;
+  }
+
+  p{
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
