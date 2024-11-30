@@ -17,14 +17,36 @@
     <div class="category-container">
       <p class="subtitle">Kategoria</p>
       <p class="subtitle-desc">Wybierając odpowiednią kategorię więcej użytkowników odwiedzi Twoje ogłoszenie</p>
-      <div class="step-input-container">
-        <i class="fas fa-layer-group step-input-icon"></i>
-        <input
-          type="text"
-          class="step-input"
-          placeholder="Wybierz kategorię"
-          readonly
-        >
+      <div class="category-select">
+        <!-- input -->
+        <div class="step-input-container">
+          <i class="fas fa-layer-group step-input-icon"></i>
+          <input
+            type="text"
+            class="step-input"
+            placeholder="Wybierz kategorię"
+            readonly
+            [value]="selectedCategory"
+          >
+          <i
+            class="fas fa-chevron-down arrow-icon"
+            [ngClass]="{'arrow-icon-down': isCategoriesDown}"
+            (click)="onChangeCategoriesDown()"
+          ></i>
+        </div>
+        <!-- select -->
+        <div *ngIf="isCategoriesDown" class="select-container">
+          <div
+            *ngFor="let category of categories"
+            class="select-option"
+            (click)="onChangeCategory(category.name)"
+          >
+            <div class="category-bg" [style.background-color]="category.backgroundColor">
+              <i class="category-icon" [ngClass]="category.icon"></i>
+            </div>
+            <p class="category-name">{{category.name}}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

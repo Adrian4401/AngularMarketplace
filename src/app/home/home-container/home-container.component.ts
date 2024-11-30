@@ -12,53 +12,53 @@ export class HomeContainerComponent implements OnInit {
   categories = [
     {
       name: 'Elektronika',
-      icon: 'fas fa-tv', // Telewizor
-      backgroundColor: '#4CAF50', // Zielony
+      icon: 'fas fa-tv',
+      backgroundColor: '#4CAF50',
     },
     {
       name: 'Motoryzacja',
-      icon: 'fas fa-car', // Samochód
-      backgroundColor: '#FF5722', // Pomarańczowy
+      icon: 'fas fa-car',
+      backgroundColor: '#FF5722',
     },
     {
       name: 'Nieruchomości',
-      icon: 'fas fa-home', // Dom
-      backgroundColor: '#3F51B5', // Niebieski
+      icon: 'fas fa-home',
+      backgroundColor: '#3F51B5',
     },
     {
       name: 'Moda',
-      icon: 'fas fa-tshirt', // Koszulka
-      backgroundColor: '#E91E63', // Różowy
+      icon: 'fas fa-tshirt',
+      backgroundColor: '#E91E63',
     },
     {
       name: 'Sport i Hobby',
-      icon: 'fas fa-football-ball', // Piłka nożna
-      backgroundColor: '#FFC107', // Żółty
+      icon: 'fas fa-football-ball',
+      backgroundColor: '#FFC107',
     },
     {
       name: 'Dom i Ogród',
-      icon: 'fas fa-seedling', // Roślina
-      backgroundColor: '#8BC34A', // Jasnozielony
+      icon: 'fas fa-seedling',
+      backgroundColor: '#8BC34A',
     },
     {
       name: 'Praca',
-      icon: 'fas fa-briefcase', // Aktówka
-      backgroundColor: '#607D8B', // Szary
+      icon: 'fas fa-briefcase',
+      backgroundColor: '#607D8B',
     },
     {
       name: 'Usługi',
-      icon: 'fas fa-tools', // Narzędzia
-      backgroundColor: '#795548', // Brązowy
+      icon: 'fas fa-tools',
+      backgroundColor: '#795548',
     },
     {
       name: 'Zwierzęta',
-      icon: 'fas fa-paw', // Łapa
-      backgroundColor: '#FF9800', // Ciemnopomarańczowy
+      icon: 'fas fa-paw',
+      backgroundColor: '#FF9800',
     },
     {
       name: 'Inne',
-      icon: 'fas fa-box', // Pudełko
-      backgroundColor: '#9E9E9E', // Jasnoszary
+      icon: 'fas fa-box',
+      backgroundColor: '#9E9E9E',
     },
   ];
 
