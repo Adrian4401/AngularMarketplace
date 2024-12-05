@@ -1,4 +1,4 @@
-<step-container>
+<step-container #test>
   <div class="step-container">
     <h1 class="step-title">Podstawowe informacje</h1>
     <div class="title-container">
@@ -11,8 +11,12 @@
           placeholder="Wprowadź tytuł..."
           maxlength="50"
           (input)="onInputChange('title', $event)"
+          [formControl]="title"
+          minlength="10"
+          name="title"
         >
       </div>
+      <div class="validation-err-msg" *ngIf="title.hasError('minlength')">Tytuł musi zawierać przynajmniej 10 znaków</div>
     </div>
     <div class="category-container">
       <p class="subtitle">Kategoria</p>

@@ -121,3 +121,10 @@ input.step-input {
     }
   }
 }
+
+.validation-err-msg{
+  color: $my-red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}

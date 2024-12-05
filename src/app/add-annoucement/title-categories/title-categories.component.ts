@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { StepStatusService } from '../step-status.service';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'title-categories',
@@ -31,9 +32,12 @@ export class TitleCategoriesComponent implements OnInit {
   @Output() titleChange = new EventEmitter<string>();
   @Output() categoryChange = new EventEmitter<string>();
 
-  constructor(private stepStatusService: StepStatusService) { }
+  constructor() {  }
+  // constructor(private stepStatusService: StepStatusService) { }
 
   ngOnInit(): void { }
+
+  title = new FormControl('');
 
   onChangeCategoriesDown(): void {
     this.isCategoriesDown = !this.isCategoriesDown;
@@ -51,9 +55,8 @@ export class TitleCategoriesComponent implements OnInit {
     const value = inputElement?.value ?? '';
     this.formData[field] = value;
 
-    const isTitleValid = this.formData.title.length > 9;
-
-    this.stepStatusService.updateStepStatus(isTitleValid);
+    // const isTitleValid = this.formData.title.length > 9;
+    // this.stepStatusService.updateStepStatus(isTitleValid);
 
     if(field === 'title') {
       this.titleChange.emit(value);
