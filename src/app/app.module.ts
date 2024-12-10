@@ -39,6 +39,7 @@ import { AdditionalInfoComponent } from './add-annoucement/additional-info/addit
 import { UserInfoComponent } from './add-annoucement/user-info/user-info.component';
 import { AddressComponent } from './add-annoucement/address/address.component';
 import { MapComponent } from './components/map/map.component';
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -78,12 +79,13 @@ import { MapComponent } from './components/map/map.component';
     AdditionalInfoComponent,
     UserInfoComponent,
     AddressComponent,
-    MapComponent
+    MapComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
