@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { HttpService } from 'src/service/http.service';
 
 @Component({
   selector: 'toolbar',
@@ -7,12 +8,21 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   @Output() loginStatusChange = new EventEmitter<any>();
+  token: any;
 
-  onLogin(): void {
-    this.loginStatusChange.emit(true as any);
+  constructor(private httpService: HttpService) { }
+
+  onLogin() {
+    this.httpService.onLogin().subscribe(
+      (response) => {
+        this.token = response;
+        console.log(this.token);
+        this.loginStatusChange.emit(true as any);
+        localStorage.setItem("AuthToken", JSON.stringify(this.token));
+      },
+      (error) => { console.log(error) }
+    );
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

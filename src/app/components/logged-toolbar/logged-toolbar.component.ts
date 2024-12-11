@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'logged-toolbar',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./logged-toolbar.component.scss']
 })
 export class LoggedToolbarComponent implements OnInit {
+  @Output() logout = new EventEmitter<void>();
+
+  onLogout() {
+    this.logout.emit();
+  }
 
   constructor() { }
 

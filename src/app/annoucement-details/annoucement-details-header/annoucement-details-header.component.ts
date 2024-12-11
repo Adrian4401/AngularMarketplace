@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
@@ -7,6 +7,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./annoucement-details-header.component.scss']
 })
 export class AnnoucementDetailsHeaderComponent implements OnInit {
+  @Input() annoucement: any;
 
   constructor(private _location: Location) { }
 

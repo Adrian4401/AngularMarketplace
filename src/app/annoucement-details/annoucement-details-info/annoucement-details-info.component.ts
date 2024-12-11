@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'annoucement-details-info',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./annoucement-details-info.component.scss']
 })
 export class AnnoucementDetailsInfoComponent implements OnInit {
+  @Input() annoucement: any;
 
   constructor() { }
 

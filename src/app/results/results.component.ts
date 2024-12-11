@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from 'src/service/http.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'results',
@@ -12,7 +13,7 @@ export class ResultsComponent implements OnInit {
   annoucements: any;
   annoucement_temp_title = "Iphone 15 Pro 98& kondycji baterii";
 
-  constructor(private httpService: HttpService) { }
+  constructor(private httpService: HttpService, private router: Router) { }
 
   ngOnInit(): void {
     this.httpService.getAnnoucements().subscribe(
@@ -22,7 +23,10 @@ export class ResultsComponent implements OnInit {
       },
       (error) => { console.log(error) }
     );
+  }
 
+  navigateToDetails(id: string): void {
+    this.router.navigate(['/annoucement-details', id])
   }
 
 }

@@ -17,7 +17,7 @@ const routes: Routes = [
     title: 'Home page'
   },
   {
-    path: 'annoucement-details',
+    path: 'annoucement-details/:id',
     component: AnnoucementDetailsContainerComponent,
     title: 'Annoucement details'
   },
@@ -29,7 +29,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -4,7 +4,12 @@
     <filters></filters>
     <h1>Znalezione ogłoszenia</h1>
     <div *ngFor="let annoucement of annoucements" class="annoucements-container">
-      <annoucement-large [title]="annoucement.title"></annoucement-large>
+      <annoucement-large
+        [title]="annoucement.title"
+        [id]="annoucement.id"
+        (click)="navigateToDetails(annoucement.id)"
+        >
+      </annoucement-large>
     </div>
     <div *ngFor="let annoucement of tempArray" class="annoucements-container">
       <annoucement-large [title]="annoucement_temp_title"></annoucement-large>

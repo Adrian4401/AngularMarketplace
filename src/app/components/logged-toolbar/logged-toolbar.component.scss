@@ -75,3 +75,15 @@
         }
     }
 }
+
+
+.logout-icon{
+  font-size: 1.5rem;
+  color: $my-primary;
+  transition: all 0.3s;
+
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
