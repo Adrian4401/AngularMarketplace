@@ -44,6 +44,8 @@
         rows="7"
         maxlength="1000"
         placeholder="Wpisz opis..."
+        [value]="selectedDescription"
+        (keyup)="onDescriptionChange($event)"
       ></textarea>
     </div>
   </div>

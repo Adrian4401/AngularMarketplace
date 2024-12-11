@@ -1,5 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+export interface Annoucement {
+  title: string;
+  description: string;
+  price: number;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +18,7 @@ export class HttpService {
   private loginUrl = `${this.serverUrl}/login`;
   private getAnnoucementsUrl = `${this.serverUrl}/annoucements`;
   private getAnnoucementDetailsUrl = `${this.serverUrl}/annoucement/`;
+  private postAnnoucementUrl = `${this.serverUrl}/annoucement-add/`;
 
   constructor(private http: HttpClient) { }
 
@@ -24,5 +32,9 @@ export class HttpService {
 
   getAnnoucementDetails(id: string) {
     return this.http.get(`${this.getAnnoucementDetailsUrl}${id}`)
+  }
+
+  postAnnoucement(annoucement: Annoucement): Observable<any> {
+    return this.http.post(`${this.postAnnoucementUrl}`, annoucement)
   }
 }

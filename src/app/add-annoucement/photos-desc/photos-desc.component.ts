@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'photos-desc',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./photos-desc.component.scss']
 })
 export class PhotosDescComponent implements OnInit {
+  @Output() descriptionChange = new EventEmitter<string>();
+  selectedDescription: string | null = null;
+  selectedFiles: any[] = [];
 
-  // dzialanie calego przycisku dodawania zdjec
+  // whole 'add photo' button working
   triggerFileInput(): void {
     const fileInput = document.getElementById('step-button') as HTMLInputElement;
     if (fileInput) {
@@ -15,8 +18,13 @@ export class PhotosDescComponent implements OnInit {
     }
   }
 
-
-  selectedFiles: any[] = [];
+  onDescriptionChange(event: Event) {
+    const target = event.target as HTMLTextAreaElement;
+    this.selectedDescription = target.value;
+    if(this.selectedDescription) {
+      this.descriptionChange.emit(this.selectedDescription)
+    }
+  }
 
   onFileChange(event: any): void {
     const files = event.target.files;

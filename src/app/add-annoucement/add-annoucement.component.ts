@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { HttpService } from 'src/service/http.service';
+import { error } from 'console';
 
 @Component({
   selector: 'add-annoucement',
@@ -8,25 +10,59 @@ import { Location } from '@angular/common';
 })
 export class AddAnnoucementComponent implements OnInit {
 
-  constructor(private _location: Location) { }
+  constructor(private _location: Location, private httpService: HttpService) { }
 
   annoucementData = {
     title: '',
-    category: ''
+    // category: '',
+    description: '',
+    price: ''
   }
 
   updateTitle(title: string): void {
     this.annoucementData.title = title;
   }
 
-  updateCategory(category: string): void {
-    this.annoucementData.category = category;
+  updateDescription(description: string): void {
+    this.annoucementData.description = description;
   }
 
+  updatePrice(price: string): void {
+    this.annoucementData.price = price;
+  }
+
+  // updateCategory(category: string): void {
+  //   this.annoucementData.category = category;
+  // }
+
   addAnnoucement(): void {
+    const priceString = this.annoucementData.price;
+
+    const priceNumber = parseInt(priceString, 10);
+    if (isNaN(priceNumber)) {
+      alert("Cena musi być liczbą");
+      return;
+    }
+
+    const annoucementToSend = {
+      title: this.annoucementData.title,
+      description: this.annoucementData.description,
+      price: priceNumber
+    };
+
+    console.log('Ogłoszenie do wysłania:', annoucementToSend);
+
+    this.httpService.postAnnoucement(annoucementToSend).subscribe(
+      response => {
+        console.log('Ogloszenie dodane: ', response);
+        this._location.back();
+      },
+      error => {
+        console.log('Nie udalo sie dodac ogloszenia: ', error);
+      }
+    )
+
     localStorage.setItem('annoucementData', JSON.stringify(this.annoucementData));
-    console.log('Udalo sie zapisac ogloszenie w localStorage')
-    this._location.back();
   }
 
   ngOnInit(): void {

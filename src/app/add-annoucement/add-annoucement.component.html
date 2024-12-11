@@ -3,10 +3,13 @@
   <div class="steps">
     <title-categories
       (titleChange)="updateTitle($event)"
-      (categoryChange)="updateCategory($event)"
     ></title-categories>
-    <photos-desc></photos-desc>
-    <additional-info></additional-info>
+    <photos-desc
+      (descriptionChange)="updateDescription($event)"
+    ></photos-desc>
+    <additional-info
+      (priceChange)="updatePrice($event)"
+    ></additional-info>
     <user-address></user-address>
     <user-info></user-info>
     <div class="add-button-container">
